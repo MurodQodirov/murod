@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    border-radius: 50%;
+    animation-name: quyosh;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes quyosh {
+    from {
+        margin-left: 0;
+        background-color: grey;
+        box-shadow: 0px 0px 50px gold;
+    }
+
+    to {
+        box-shadow: 50px 50px 5px gold;
+    }
+}
